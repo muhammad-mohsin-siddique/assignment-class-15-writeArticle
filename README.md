@@ -14,7 +14,8 @@ Assignment for Class 15- Write Articles for CSS Language
   <pre>
    - On the first page, use inline CSS.
    - On the second page, use internal CSS.
-   - On the third page, use external CSS. You can use colors, backgrounds, and text alignment, which we discussed in class.
+   - On the third page, use external CSS. 
+    You can use colors, backgrounds, and text alignment, which we discussed in class.
   </pre>
 </ol>
    
