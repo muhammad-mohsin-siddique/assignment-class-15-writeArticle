@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>External CSS</title>
-    <link rel="shortcut icon" href="./imges/CSS-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="./imges/CSS-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div>
-            <ul>
-                <li><a href=""><img src="./imges/CSS-logo.png" alt="CSS-LOGO" title="CSS Logo" width="80" height="80"></a></li>
-                <li> <a class="anchor-tag" href="#">External CSS</a></li>
-                <li><a class="anchor-tag" href="internal.html">Internal CSS</a></li>
-                <li><a class="anchor-tag" href="inline.html">Inline CSS</a></li>
-            </ul>
-        </div>
+      <div>
+        <ul>
+          <li>
+            <a href="./index.html"
+              ><img
+                src="./imges/CSS-logo.png"
+                alt="CSS-LOGO"
+                title="CSS Logo"
+                width="80"
+                height="80"
+            /></a>
+          </li>
+          <li>
+            <a id="anchor-tag" class="anchor-tag" href="#">External CSS</a>
+          </li>
+          <li><a class="anchor-tag" href="internal.html">Internal CSS</a></li>
+          <li><a class="anchor-tag" href="inline.html">Inline CSS</a></li>
+        </ul>
+      </div>
     </header>
     <section class="container-body">
-
+      <div class="columns">
+        <h1 class="headings">The best way to write CSS & why it's importan?</h1>
+        <p class="content">
+          Writing CSS with a focus on separation of concerns is crucial for code
+          maintainability and scalability. This approach creates a clean and
+          organized codebase, enhances readability, simplifies collaboration,
+          and ensures flexibility in styles.
+        </p>
+      </div>
+      <div class="columns">
+        <h1 class="headings">
+          Difference between id and class selectors in CSS
+        </h1>
+        <p class="content">
+          ID and class selectors are both used to apply CSS styles to HTML
+          elements. The main difference is that ID selectors are unique and can
+          only be used once per page, while class selectors can be reused for
+          multiple elements.
+        </p>
+      </div>
+      <div class="columns">
+        <h1 class="headings">
+          Explain why there are so many types of selectors in CSS.
+        </h1>
+        <p class="content">
+          CSS offers different selectors to help you style web elements
+          precisely. Whether you want to style elements by type, class, ID, or
+          their position on the page, CSS selectors give you the tools to do it.
+          These options make it easier to control how your web page looks and
+          behaves.
+        </p>
+      </div>
     </section>
-</body>
+  </body>
 </html>

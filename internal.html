@@ -1,25 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Internal CSS</title>
-    <link rel="shortcut icon" href="./imges/CSS-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="./imges/CSS-logo.png" type="image/x-icon" />
+    <style>
+      * {
+        background-color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+      }
+      header ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgb(221, 218, 218);
+      }
+      li {
+        list-style-type: none;
+      }
+      .anchor-tag {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: large;
+        color: black;
+        padding: 5px;
+        border: 5px solid black;
+        border-radius: 8px;
+      }
+
+      .anchor-tag:hover {
+        color: blue;
+      }
+
+      .container-body {
+        height: 1000px;
+      }
+      .columns {
+        width: auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        height: 350px;
+        box-shadow: 10px -10px 10px rgb(221, 218, 218);
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        background-color: rgba(13, 221, 221, 0.788);
+        margin-bottom: 30px;
+        padding: 60px 0px;
+      }
+      .headings {
+        border: 2px solid grey;
+        border-radius: 10px;
+        margin: 15px 25px 15px 25px;
+      }
+      .content {
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: larger;
+        line-height: 2.9;
+        margin: 60px 20px 10px 10px;
+        height: 150px;
+      }
+      #anchor-tag {
+        color: blue;
+      }
+
+      img {
+        border: 6px solid black;
+        border-radius: 8px;
+        padding: 10px;
+      }
+      #column{
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <div>
-            <ul>
-                <li><a href=""><img src="./imges/CSS-logo.png" alt="CSS-LOGO" title="CSS Logo" width="80" height="80"></a></li>
-                <li> <a class="anchor-tag" href="#">External CSS</a></li>
-                <li><a class="anchor-tag" href="internal.html">Internal CSS</a></li>
-                <li><a class="anchor-tag" href="inline.html">Inline CSS</a></li>
-            </ul>
-        </div>
+      <div>
+        <ul>
+          <li>
+            <a href="./index.html"
+              ><img
+                src="./imges/CSS-logo.png"
+                alt="CSS-LOGO"
+                title="CSS Logo"
+                width="80"
+                height="80"
+            /></a>
+          </li>
+          <li>
+            <a class="anchor-tag" href="./index.html">External CSS</a>
+          </li>
+          <li>
+            <a id="anchor-tag" class="anchor-tag" href="#">Internal CSS</a>
+          </li>
+          <li><a class="anchor-tag" href="inline.html">Inline CSS</a></li>
+        </ul>
+      </div>
     </header>
     <section class="container-body">
-
+      <div class="columns">
+        <h1 class="headings">The best way to write CSS & why it's importan?</h1>
+        <p class="content">
+          Writing CSS with a focus on separation of concerns is crucial for code
+          maintainability and scalability. This approach creates a clean and
+          organized codebase, enhances readability, simplifies collaboration,
+          and ensures flexibility in styles.
+        </p>
+      </div>
+      <div class="columns">
+        <h1 class="headings">
+          Difference between id and class selectors in CSS
+        </h1>
+        <p class="content">
+          ID and class selectors are both used to apply CSS styles to HTML
+          elements. The main difference is that ID selectors are unique and can
+          only be used once per page, while class selectors can be reused for
+          multiple elements
+        </p>
+      </div>
+      <div class="columns" id="column" >
+        <h1 class="headings">
+          Explain why there are so many types of selectors in CSS.
+        </h1>
+        <p class="content">
+          CSS offers different selectors to help you style web elements
+          precisely. Whether you want to style elements by type, class, ID, or
+          their position, CSS selectors give you the tools to do it.
+          These options make it easier to control how your web page looks and
+          behaves. <br/>
+        </p>
+        <p class="content" style="text-align: left; height: 280px;">
+          1. Simple selectors (select elements based on name, id, class)<br/>
+          2. Combinator selectors (select elements based on a specific relationship between them)<br/>
+          3. Pseudo-class selectors (select elements based on a certain state)<br/>
+          4. Pseudo-elements selectors (select and style a part of an element)<br/>
+          5. Attribute selectors (select elements based on an attribute or attribute value)<br/>
+        </p>
+      </div>
     </section>
-</body>
+  </body>
 </html>
